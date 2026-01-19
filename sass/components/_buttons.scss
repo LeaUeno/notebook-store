@@ -27,10 +27,12 @@
 .buttonx1{
     @extend .buttonx;
     background-color: rgba(76, 0, 130, 0.599);
+    transition: transform 1s ease-in-out infinite;
 }
 .buttonx1:hover{
     background-color: indigo;
     color: black;
+    transform: scale(1.2);
     a{
         color: variables.$secondary-color;
     }

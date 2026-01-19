@@ -1,0 +1,87 @@
+
+
+    @use '../components/marcas';
+    @use '../components/banner';
+    @use '../components/cards';
+    @use '../components/aside';
+    @use '../components/container';
+    @use '../utilities/mixins';
+    @use '../utilities/variables';
+    @use '../components/animations';
+    @use '../components/productos';
+    @use '../components/contacto';
+
+
+main{
+    
+    grid-area: main;
+    background-image:url(../img/background.avif) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    section{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-image:url(../img/background.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+// -------------------------------
+    }
+}
+
+
+.mainx{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    aside{
+    display: none;
+    }
+    .divx{
+        display: flex;
+        flex-direction: column;
+    background-color: variables.$tenth-color;
+        form{
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        }
+        input{
+            width: 130px;
+        }
+    }
+
+
+
+}.divani{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 30px;
+    
+
+}
+
+.carousel-item{
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+.d-block{
+    width: 100%;
+}
+

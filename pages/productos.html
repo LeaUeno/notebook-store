@@ -12,24 +12,33 @@
     <!-- Link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Workbench&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Workbench&display=swap" rel="stylesheet">
 </head>
 <!--Los textos los copie de otras paginas-->
 <body>
     <header>
-        <img class="logo1" src="../IMG/Logo.png" alt="logo">
+        <div class="logo-titulo">
+        <img class="logo1" src="../img/Logo.png" alt="logo">
         <h1><a href="../index.html">Notebook Store</a></h1>
+        </div>
             <div class="account-titulo">
             <div class="titulo">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/galeria.html">Galeria</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <!-- ======BOOTSTRAP======= -->
+                <div class="dropdown">
+                    <button class="btn btn-#DC143C dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contenido
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../index.html">Inicio</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../pages/productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="../pages/galeria.html">Galeria</a></li>
+                        <li><a class="dropdown-item" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- =======BOOTSTRAP====== -->
+            
         </div>
         <div class="account">
             <a href="../pages/account.html">Iniciar Sesion</a>
@@ -41,24 +50,26 @@
     <!-- =======INICIO MAIN=========== -->
     <main>
         <aside>
-            <div class="divx">
+            <div class="sidebar">
+                <div class="divx">
         <form action="">
             <label for="nombre-form">Nombre</label>
-            <input type="text" id="nombre-form" >
-        </form>
+            <input type="text" id="nombre-form">
+        
 
             <label for="apellido-form">Apellido</label>
             <input type="text" id="apellido-form">
+
 
             <label>Email:</label>
             <input type="email">
 
             
 
-            <p>Cantidad</p>
+            <label for="">Cantidad</label>
             <input type="number">
 
-            <p>Color del modelo</p>
+            <label for="">Color de modelo</label>
             <input type="color">
             
             <label for="">Comprar en local</label>
@@ -74,40 +85,63 @@
 
             <input type="submit" value="Enviar">
         </form>
-
-        <div class="divb">
+    </div>
+    <div class="divb">
         <h2>Productos</h2>
             <nav>
                 <ul>
-                    <li><a href="#vivobook">Asus Vivobook 15</a></li>
-                    <li><a href="#predator">Acer Predator</a></li>
-                    <li><a href="#thinkpad">Lenovo Thinkpad</a></li>
-                    <li><a href="#mcbook">Apple MacBook Air (M4)</a></li>
-                    <li><a href="#dell">Dell XPS 13</a></li>
-                    <li><a href="#galaxy">Samsung Galaxy Book5 Pro</a></li>
-                    <li><a href="#yoga">Lenovo Yoga</a></li>
-                    <li><a href="#zenbook">Asus Zenbook S 16</a></li>
-                    <li><a href="#zephyrus">Asus ROG Zephyrus G16</a></li>
+                    <li><a href="../pages/productos.html#vivobook">Asus Vivobook 15</a></li>
+                    <li><a href="../pages/productos.html#predator">Acer Predator</a></li>
+                    <li><a href="../pages/productos.html#thinkpad">Lenovo Thinkpad</a></li>
+                    <li><a href="../pages/productos.html#mcbook">Apple MacBook Air (M4)</a></li>
+                    <li><a href="../pages/productos.html#dell">Dell XPS 13</a></li>
+                    <li><a href="./pages/productos.html#galaxy">Samsung Galaxy Book5 Pro</a></li>
+                    <li><a href="../pages/productos.html#yoga">Lenovo Yoga</a></li>
+                    <li><a href="../pages/productos.html#zenbook">Asus Zenbook S 16</a></li>
+                    <li><a href="../pages/productos.html#zephyrus">Asus ROG Zephyrus G16</a></li>
                 </ul>
             </nav>
     </div>
-    </div>
+            </div>
         </aside>
 
         <!--======== PRODUCTOS============= -->
         <section>
             <div class="div-producto" id="vivobook">
             <h2>Asus Vivobook 15</h2>
-            <img src="../IMG/asusnotebook.jpeg" alt="Asus">
+            <img src="../img/asusnotebook.jpeg" alt="Asus">
             <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/1.1.png" class="d-block w-100" alt="asus1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/1.2.png" class="d-block w-100" alt="asus2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/1.3.png" class="d-block w-100" alt="asus3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/1.4.png" class="d-block w-100" alt="asus4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/1.5.png" class="d-block w-100" alt="asus5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -135,7 +169,7 @@
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>15,6", HD (1366x768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
@@ -156,24 +190,47 @@
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
         
         </div>
         <hr>
         <!--======== PRODUCTO1ACER============= -->
         <div class="div-producto" id="predator">
             <h2>Acer Predator</h2>
-            <img src="../IMG/acernotebook.jpg" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
+            <img src="../img/acernotebook.jpg" alt="Asus">
+            <p>Acer Predator es una notebook diseñada para quienes buscan el máximo rendimiento en juegos y tareas exigentes. Su estética agresiva y moderna refleja la potencia que lleva en su interior, ideal para gaming competitivo, creación de contenido y multitarea intensiva. La pantalla de alta tasa de refresco ofrece imágenes fluidas y envolventes, mientras que su sistema de refrigeración avanzado mantiene un desempeño estable incluso en sesiones prolongadas. El teclado retroiluminado brinda precisión y comodidad, y su construcción robusta asegura durabilidad. Predator combina potencia gráfica, velocidad y diseño para quienes necesitan una experiencia sin concesiones.</p>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample1" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/2.1.webp" class="d-block w-100" alt="acer1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/2.2.webp" class="d-block w-100" alt="acer2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/2.3.webp" class="d-block w-100" alt="acer3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/2.4.webp" class="d-block w-100" alt="acer4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/2.5.webp" class="d-block w-100" alt="acer5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -181,65 +238,87 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>Predator Helios/Predator Neo (según versión)</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Negro</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Home </p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Intel® Core™ i7 de 13ª generación (hasta 5.0 GHz)</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>NVIDIA® GeForce RTX™ 4060 8 GB GDDR6</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>16", QHD+ (2560x1600),IPS, 165 Hz, 500 nits</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB DDR5</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>1 TB M.2 NVMe PCIe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>90 Wh, Li-ion</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>2.6 kg aprox.</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
 
         </div>
         <hr>
         <!--======== PRODUCTO2THINKPAD============= -->
         <div class="div-producto" id="thinkpad">
             <h2>Lenovo Thinkpad</h2>
-            <img src="../IMG/lenovonotebook.webp" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
-        
+            <img src="../img/lenovonotebook.webp" alt="Asus">
+            <p>Lenovo ThinkPad es sinónimo de confiabilidad, productividad y diseño profesional. Pensada para entornos laborales exigentes, ofrece un rendimiento sólido y estable para el trabajo diario, la gestión de proyectos y la multitarea. Su teclado, reconocido por su comodidad y precisión, permite largas jornadas de escritura sin fatiga. El diseño sobrio y resistente la convierte en una compañera ideal para el trabajo híbrido y los viajes. Además, incorpora avanzadas funciones de seguridad y optimización que protegen la información y mejoran la eficiencia. ThinkPad es la elección perfecta para profesionales que priorizan rendimiento, durabilidad y eficiencia.</p>
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample2" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/3.1.avif" class="d-block w-100" alt="thinkpad1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/3.2.avif" class="d-block w-100" alt="thinkpad2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/3.3.webp" class="d-block w-100" alt="thinkpad3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/3.4.avif" class="d-block w-100" alt="thinkpad4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/3.5.avif" class="d-block w-100" alt="thinkpad5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -247,49 +326,49 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>ThinkPad T14 Gen 4</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Negro</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Pro</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Intel® Core i7-1355U</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>Intel® Iris Xe</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>14", WUXGA (1920x1200), IPS, antirreflejo, 300 nits</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB DDR5</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>512 GB M.2 NVMe™ PCIe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>52.5 Wh</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.35 kg aprox.</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
 
         </div>
         <hr>
@@ -298,16 +377,39 @@
         <!--======== PRODUCTO3MACBOOK============= -->
         <div class="div-producto" id="mcbook">
             <h2>Apple MacBook Air (M4)</h2>
-            <img src="../IMG/Apple-MacBook-Air.jpg" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
+            <img src="../img/Apple-MacBook-Air.jpg" alt="Asus">
+            <p>La MacBook Air con chip M4 redefine la portabilidad y el rendimiento en un diseño ultradelgado y elegante. Ofrece una experiencia fluida y silenciosa, ideal tanto para tareas creativas como para el uso diario. Su pantalla de alta calidad brinda colores vibrantes y gran nitidez, perfecta para trabajar, estudiar o disfrutar de contenido multimedia. Gracias a su eficiencia energética, permite largas horas de uso sin comprometer el rendimiento. El ecosistema Apple garantiza una integración perfecta con otros dispositivos, facilitando el trabajo y la productividad. MacBook Air combina potencia, diseño y simplicidad en una notebook liviana y versátil.</p>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample3" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/4.1.jpg" class="d-block w-100" alt="mcbook1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/4.2.jpg" class="d-block w-100" alt="mcbook2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/4.3.jpg" class="d-block w-100" alt="mcbook3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/4.4.jpg" class="d-block w-100" alt="mcbook4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/4.5.webp" class="d-block w-100" alt="mcbook5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -315,49 +417,49 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>MacBook Air 13"</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Gris Espacial/ Plata</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>macOS</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Apple M4 (CPU 10 núcleos)</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>GPU Apple integrada (10 núcleos)</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>13.6", Liquid Retina (2560 x1664), 500 nits</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB memoria unificada</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>512 GB SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>Hasta 18 horas de autonomía</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.24 kg</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
 
         </div>
         <hr>
@@ -366,16 +468,39 @@
         <!--======== PRODUCTO4DELLXPS============= -->
         <div class="div-producto" id="dell">
             <h2>Dell XPS 13</h2>
-            <img src="../IMG/Dell-XPS-13.jpeg" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
+            <img src="../img/Dell-XPS-13.jpeg" alt="Asus">
+            <p>Dell XPS 13 destaca por su diseño premium, compacto y sofisticado, pensado para usuarios que valoran estilo y rendimiento. Su pantalla prácticamente sin bordes ofrece una experiencia visual inmersiva en un formato reducido, ideal para trabajar en movimiento. El chasis de alta calidad brinda una sensación robusta y elegante, mientras que su desempeño fluido permite manejar múltiples tareas con facilidad. Es perfecta para profesionales, estudiantes y creativos que buscan potencia en un equipo liviano. Dell XPS 13 combina innovación, portabilidad y una experiencia de uso refinada para el día a día.</p>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample4" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/5.1.webp" class="d-block w-100" alt="dell1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/5.2.webp" class="d-block w-100" alt="dell2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/5.3.webp" class="d-block w-100" alt="dell3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/5.4.webp" class="d-block w-100" alt="dell4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/5.5.webp" class="d-block w-100" alt="dell5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -383,49 +508,49 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>XPS 13 Plus</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Platinum Silver</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Home</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Intel® Core Ultra 7</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>Intel Arc</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>13.4", OLED 3K (2880 x1800), táctil</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB LPDDR5x</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>512 GB M.2 NVMe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>55 Wh</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.26 kg</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
 
         </div>
         <hr>
@@ -434,16 +559,39 @@
         <!--======== PRODUCTO5SAMSUNG============= -->
         <div class="div-producto" id="galaxy">
             <h2>Samsung Galaxy Book5 Pro </h2>
-            <img src="../IMG/samsung galaxy pro.jpg" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
+            <img src="../img/samsung galaxy pro.jpg" alt="Asus">
+            <p>Samsung Galaxy Book5 Pro es una notebook moderna y elegante que combina potencia y conectividad inteligente. Diseñada para la productividad y el entretenimiento, ofrece una pantalla de alta calidad que resalta colores y detalles con gran precisión. Su rendimiento ágil permite trabajar con múltiples aplicaciones de forma eficiente, mientras que su diseño delgado facilita el transporte. La integración con el ecosistema Samsung mejora la experiencia entre dispositivos, permitiendo una transición fluida entre smartphone, tablet y notebook. Galaxy Book5 Pro es ideal para quienes buscan un equipo versátil, potente y con un enfoque tecnológico avanzado.</p>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample5" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/6.1.webp" class="d-block w-100" alt="galaxy1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/6.2.webp" class="d-block w-100" alt="galaxy2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/6.3.webp" class="d-block w-100" alt="galaxy3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/6.4.webp" class="d-block w-100" alt="galaxy4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/6.5.webp" class="d-block w-100" alt="galaxy5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -451,49 +599,49 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>Galaxy Book5 Pro</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Graphite</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Home</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Intel Core Ultra 7</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>Intel Arc</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>16", AMOLED 3K (2880x 1800), 120 Hz</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB LPDDR5x</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>1 TB NVMe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>76 Wh</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.56 kg</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
 
         </div>
         <hr>
@@ -502,16 +650,39 @@
         <!--======== PRODUCTO6LENOVOYOGA============= -->
         <div class="div-producto" id="yoga">
             <h2>Lenovo Yoga 9i 2-en-1</h2>
-            <img src="../IMG/lenvoyoga.avif" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
+            <img src="../img/lenvoyoga.avif" alt="Asus">
+            <p>Lenovo Yoga 9i 2-en-1 ofrece flexibilidad y rendimiento en un diseño elegante y funcional. Gracias a su formato convertible, se adapta fácilmente a distintos modos de uso: notebook, tablet, presentación o carpa. Su pantalla táctil brinda una experiencia intuitiva y cómoda, ideal para trabajo creativo, estudio o entretenimiento. El rendimiento fluido permite realizar múltiples tareas sin esfuerzo, mientras que su diseño premium aporta portabilidad y estilo. Yoga 9i es una excelente opción para quienes buscan versatilidad, comodidad y potencia en un solo dispositivo.</p>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample6" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/7.1.webp" class="d-block w-100" alt="yoga1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/7.2.webp" class="d-block w-100" alt="yoga2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/7.3.webp" class="d-block w-100" alt="yoga3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/7.4.webp" class="d-block w-100" alt="yoga4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/7.5.webp" class="d-block w-100" alt="yoga5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -519,49 +690,49 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>Yoga 9i Gen 8</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Storm Grey</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Home</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Intel Core i7-1360P</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>Intel Iris Xe</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>14", OLED 2.8K (2880x 1800), táctil, 120 Hz</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB LPDDR5</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>1 TB M.2 NVMe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>75 Wh</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.4 kg</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
 
         </div>
         <hr>
@@ -570,16 +741,39 @@
         <!--======== PRODUCTO7ASUSZENBOOK============= -->
         <div class="div-producto" id="zenbook">
             <h2>Asus Zenbook S 16 OLED</h2>
-            <img src="../IMG/asuszenbooks16.webp" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
+            <img src="../img/asuszenbooks16.webp" alt="Asus">
+            <p>ASUS Zenbook S 16 OLED combina diseño ultradelgado, ligereza y una experiencia visual excepcional. Su pantalla OLED ofrece colores intensos, negros profundos y un alto nivel de detalle, ideal para creadores de contenido y usuarios exigentes. A pesar de su perfil compacto, brinda un rendimiento ágil para el trabajo diario y la multitarea. Su construcción premium y minimalista lo convierte en un equipo elegante y fácil de transportar. Zenbook S 16 OLED es perfecto para quienes buscan potencia, portabilidad y una calidad de imagen superior en una notebook moderna..</p>
         
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample7" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/8.1.webp" class="d-block w-100" alt="zenbook1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/8.2.webp" class="d-block w-100" alt="zenbook2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/8.3.webp" class="d-block w-100" alt="zenbook3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/8.4.webp" class="d-block w-100" alt="zenbook4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/8.5.webp" class="d-block w-100" alt="zenbook5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
@@ -587,49 +781,49 @@
             <ul>
                 <li>Modelo
                     <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <p>UX5606</p>
                 </li>
                 <li>
                     <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <p>Negro / Gris</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Home</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>AMD Ryzen AI 9</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>AMD Radeon integrada</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>16", OLED 3K (2880x1800), 120 Hz, HDR</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>32 GB LPDDR5x</p>
                 </li>
                 <li>
                     <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <p>1 TB M.2 NVMe PCIe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>78 Wh</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.5 kg</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
         </div>
         <hr>
 
@@ -637,66 +831,88 @@
         <!--======== PRODUCTO8ASUSROGZEPHYRUS============= -->
         <div class="div-producto" id="zephyrus">
             <h2>Asus ROG Zephyrus G16</h2>
-            <img src="../IMG/asusrogzephyrusg16.jpg" alt="Asus">
-            <p>Ya sea en el trabajo o en el juego, ASUS VivoBook 15 es la computadora portátil compacta que te sumerge en lo que sea que te propongas hacer. Su nueva pantalla NanoEdge de cuatro lados sin marco cuenta con un bisel ultradelgado de 5.7 mm, que ofrece una asombrosa relación de pantalla a cuerpo del 88% para imágenes sumamente inmersivas. El nuevo diseño de bisagra ErgoLift también inclina el teclado hacia arriba para una escritura más cómoda. VivoBook 15 funciona con el último procesador Intel ® Core ™ i7 con NVIDIA ® gráficos y unidades de almacenamiento dual para ayudarlo a hacer las cosas con la menor cantidad de complicaciones. Además, está disponible en cuatro acabados únicos para adaptarse a su estilo.</p>
-            <div class="img-productos">
-            <img src="../IMG/1.1.png" alt="asus1">
-            <img src="../IMG/1.2.png" alt="asus2">
-            <img src="../IMG/1.3.png" alt="asus3">
-            <img src="../IMG/1.4.png" alt="asus4">
-            <img src="../IMG/1.5.png" alt="asus5">
-            </div>
-        
+            <img src="../img/asusrogzephyrusg16.jpg" alt="Asus">
+            <p>ASUS ROG Zephyrus G16 está diseñada para gamers y creadores que buscan alto rendimiento en un formato estilizado. Combina potencia gráfica y velocidad con un diseño más delgado y refinado que otras notebooks gaming. Su pantalla de alta calidad ofrece una experiencia visual fluida e inmersiva, ideal para juegos y edición multimedia. El sistema de refrigeración avanzado mantiene el rendimiento estable incluso bajo carga intensa. Zephyrus G16 logra un equilibrio perfecto entre potencia, portabilidad y estética, ideal para quienes quieren rendimiento extremo sin sacrificar diseño.</p>
+        <hr>
+        <!-- BOOTSTRAP -->
+        <div id="carouselExample8" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/9.1.webp" class="d-block w-100" alt="zephyrus1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/9.2.webp" class="d-block w-100" alt="zephyrus2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/9.3.webp" class="d-block w-100" alt="zephyrus3">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/9.4.webp" class="d-block w-100" alt="zephyrus4">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../img/9.5.jpg" class="d-block w-100" alt="zephyrus5">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample8" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample8" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        <!-- BOOTSTRAP -->
         <hr>
         
             <div class="modelos">
             <h2>Especificaciones</h2>
             <ul>
                 <li>Modelo
-                    <h3>Modelo</h3>
-                    <p>T-800</p>
+                    <h5>Modelo</h5>
+                    <p>GU605</p>
                 </li>
                 <li>
-                    <h3>Color</h3>
-                    <p>Black Sabbath</p>
+                    <h5>Color</h5>
+                    <p>Eclipse Gray</p>
                 </li>
                 <li>
                     <h3>Sistema Operativo</h3>
-                    <p>Windows 11 Home - ASUS recomienda Windows 11 Pro para empresas-Sin SO preinstalado</p>
+                    <p>Windows 11 Home</p>
                 </li>
                 <li>
                     <h3>Procesador</h3>
-                    <p>Intel® Core™ i5-1240P 1.7 GHz (12M Caché, hasta 4.4 GHz, 4P+8E núcleos)</p>
+                    <p>Intel Core Ultra 9</p>
                 </li>
                 <li>
                     <h3>Graficos</h3>
-                    <p>Gráficos Intel® Iris™ Plus</p>
+                    <p>NVIDIA GeForce RTX 4070 8 GB</p>
                 </li>
                 <li>
                     <h3>pantalla</h3>
-                    <p>15,6", HD (1366 × 768) 16:9, Retroiluminación LED, 60Hz , 200 nits</p>
+                    <p>16", OLED QHD+ (2560x1600), 240 Hz</p>
                 </li>
                 <li>
                     <h3>Memoria</h3>
-                    <p>Memoria DDR3 de 8 GB</p>
+                    <p>16 GB DDR5</p>
                 </li>
                 <li>
-                    <h3>Almacenamiento</h3>
-                    <p>512 GB M.2 NVMe™ PCIe® 3.0 SSD</p>
+                    <h5>Almacenamiento</h5>
+                    <p>1 TB M.2 NVMe PCIe SSD</p>
                 </li>
                 <li>
                     <h3>Bateria</h3>
-                    <p>42 Wh, 3S1P, 3 celdas Li-ion</p>
+                    <p>90 Wh</p>
                 </li>
                 <li>
                     <h3>Peso</h3>
-                    <p>1.70 kg (3.75 lbs)</p>
+                    <p>1.85 kg</p>
                 </li>
             </ul>
             </div>
             <h2>No lo pienses más y conseguila ya</h2>
-        <img src="../IMG/felizcompra.avif" alt="levabien">
-        <button><a href="./Contacto.html">Comprar</a></button>
+        <img src="../img/felizcompra.avif" alt="levabien">
+        <button class="buttonx"><a href="./Contacto.html">Comprar</a></button>
         </div>
         <hr>
         
@@ -710,16 +926,16 @@
     <footer>
         <section class="containerx-footer">
             <div>
-            <img class="logo" src="IMG/Logo.png" alt="logo">
+            <img class="logo" src="../img/Logo.png" alt="logo">
             <p>copyright </p>
             </div>
             
         <div >
             <h3>Redes Sociales</h3>
             <ul class="redes">
-                <li><a href="https://www.facebook.com/" target="_blank"><img  class="marca-logo1"src="IMG/Facebook_logo_(square).png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img class="marca-logo1" src="IMG/Instagram_icon.png" alt=""></a></li>
-                <li><a href="http://www.x.com/" target="_blank"><img class="marca-logo1" src="IMG/xicon.avif" alt=""></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img  class="marca-logo1"src="../img/Facebook_logo_(square).png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img class="marca-logo1" src="../img/Instagram_icon.png" alt=""></a></li>
+                <li><a href="http://www.x.com/" target="_blank"><img class="marca-logo1" src="../img/xicon.avif" alt=""></a></li>
             </ul>
         </div>
 

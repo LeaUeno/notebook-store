@@ -7,34 +7,49 @@
     <!-- Link Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <!-- Link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Workbench&display=swap" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Workbench&display=swap" rel="stylesheet">
 
-<!-- COMENTARIO GENERAL
-lo basico creo que deberia funcionar, hay algunas cosas que no pude terminar por el tiempo,por ejemplo descripciones de los equipos y sus caracteristicas, queria agregar unos productos mas con bootstrap pero se me complico. y con respecto a la ia, el vsc me dio autocompletado de varias cosas. 
-empiezo a enviar el trabajo a las 18:07hs
-del dia 23-12-25 -->
+
+<!-- Bueno, este es mi pre entrega 3.
+    use mixins mas que nada en la particion de productos.
+    animaciones tambien en productos.html e index.html , trate de limpiar el codigo lo mas que pude.
+    Yo trabaje con una copia de la pre-entrega 2, vi que todo anduviese y luego fui reescribiendo el trabajo de a poco.
+    
+    use algunos autocompletados del vsc y use ia para hacer las descripciones de los equipos y sus especificaciones para acelerar el trabajo.
+    
+    tal vez los colores de algunos fondos hacen dificil de ver las fuentes, deberia cambiarles el color, por el momento no lo hago por un tema de gusto personal,-->
+</head>
 <body>
     <!-- =======INICIO HEADER========= -->
     <header>
-        <img class="logo1" src="IMG/Logo.png" alt="logo">
+        <div class="logo-titulo">
+            <a class="rotar1" href="#"><img class="logo1" src="img/Logo.png" alt="logo"></a>
+        
         <h1><a href="#">Notebook Store</a></h1>
+        </div>
             <div class="account-titulo">
             <div class="titulo">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/galeria.html">Galeria</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <!-- BOOSTRAP -->
+                <div class="dropdown">
+                    <button class="btn btn-#DC143C dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contenido
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Inicio</a>
+                        </li>
+                        <li><a class="dropdown-item" href="./pages/productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Galeria</a></li>
+                        <li><a class="dropdown-item" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- BOOSTRAP -->
+
             
         </div>
         <div class="account">
@@ -50,21 +65,22 @@ del dia 23-12-25 -->
                 <div class="divx">
         <form action="">
             <label for="nombre-form">Nombre</label>
-            <input type="text" id="nombre-form" >
-        </form>
+            <input type="text" id="nombre-form">
+        
 
             <label for="apellido-form">Apellido</label>
             <input type="text" id="apellido-form">
+
 
             <label>Email:</label>
             <input type="email">
 
             
 
-            <p>Cantidad</p>
+            <label for="">Cantidad</label>
             <input type="number">
 
-            <p>Color del modelo</p>
+            <label for="">Color de modelo</label>
             <input type="color">
             
             <label for="">Comprar en local</label>
@@ -97,14 +113,14 @@ del dia 23-12-25 -->
                 </ul>
             </nav>
     </div>
-</div>
+            </div>
         </aside>
         <section>
 
             <!--========= banner=============== -->
             <div class="banner-div">
                 <h2>
-                    Disfruta de las mejores ofertas en notebooks en estas fiestas!!!!!!
+                    Inicia este año  con la mejor tecnologia.
                 </h2>
             </div>
             <!--========= fin banner=============== -->
@@ -112,70 +128,71 @@ del dia 23-12-25 -->
             <h2>La mejor tienda digital</h2>
             <!--======== marcas============= -->
             <h2>Las mejores marcas</h2>
-            <div class="marca"><a href="https://www.asus.com/ar/" target="_blank"><img class="marca-logo" src="IMG/asuslogo.jpg" alt="asus"></a>
-            <a href="https://www.acer.com/ar-es" target="_blank"><img class="marca-logo" src="IMG/acerlogo.png" alt="acer"></a>
-            <a href="https://latam.msi.com/" target="_blank"><img class="marca-logo" src="IMG/MSIlogo.png" alt="msi"></a>
+            <div class="marca"><a class="rotar1" href="https://www.asus.com/ar/" target="_blank"><img class="marca-logo" src="img/asuslogo.jpg" alt="asus"></a>
+            <a class="rotar1" href="https://www.acer.com/ar-es" target="_blank"><img class="marca-logo" src="img/acerlogo.png" alt="acer"></a>
+            <a class="rotar1" href="https://latam.msi.com/" target="_blank"><img class="marca-logo" src="img/MSIlogo.png" alt="msi"></a>
             
             </div>
+
         <hr>
         <hr>
         <!--========Productos CARDS============= -->
         <h2>Encontra tu equipo ideal</h2>
         <div class="card-cont">
             <div class="card">
-                <img class="nbproducto" src="IMG/asusnotebook.jpeg" alt="Asus">
-                <h3>Asus Vivobook 15</h3>
+                <img class="nbproducto" src="img/asusnotebook.jpeg" alt="Asus">
+                <h3><hr>Asus Vivobook 15</h3>
                 <p>Precio: $2500000</p>
-                <button><a href="./pages/productos.html#vivook">Ver más</a></button> 
+                <button class="buttonx"><a href="./pages/productos.html#vivook">Ver más</a></button> 
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/acernotebook.jpg" alt="Acer">
-                <h3>Acer Predator</h3>
-                <p>Precio: $1300000</p>
-                <button><a href="./pages/productos.html#predator">Ver más</a></button>
+                <img class="nbproducto" src="img/acernotebook.jpg" alt="Acer">
+                <h3><hr>Acer Predator</h3>
+                <p>Precio: $5.141.399 ARS</p>
+                <button class="buttonx"><a href="./pages/productos.html#predator">Ver más</a></button>
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/lenovonotebook.webp" alt="Lenovo">
-                <h3>Lenovo Thinkpad</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#thinkpad">Ver más</a></button>
+                <img class="nbproducto" src="img/lenovonotebook.webp" alt="Lenovo">
+                <h3><hr>Lenovo Thinkpad</h3>
+                <p>Precio: $3.500.000 ARS</p>
+                <button class="buttonx"><a href="./pages/productos.html#thinkpad">Ver más</a></button>
             </div>
 
             <div class="card">
-                <img class="nbproducto" src="IMG/Apple-MacBook-Air.jpg" alt="Lenovo">
-                <h3>Apple MacBook Air (M4)</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#mcbook">Ver más</a></button>
+                <img class="nbproducto" src="img/Apple-MacBook-Air.jpg" alt="Lenovo">
+                <h3><hr>Apple MacBook Air (M4)</h3>
+                <p>Precio: $3.000.000</p>
+                <button class="buttonx"><a href="./pages/productos.html#mcbook">Ver más</a></button>
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/Dell-XPS-13.jpeg" alt="Lenovo">
-                <h3>Dell XPS 13</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#dell">Ver más</a></button>
+                <img class="nbproducto" src="img/Dell-XPS-13.jpeg" alt="Lenovo">
+                <h3><hr>Dell XPS 13</h3>
+                <p>Precio: $1.500.000</p>
+                <button class="buttonx"><a href="./pages/productos.html#dell">Ver más</a></button>
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/samsung galaxy pro.jpg" alt="Lenovo">
-                <h3>Samsung Galaxy Book5 Pro</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#galaxy">Ver más</a></button>
+                <img class="nbproducto" src="img/samsung galaxy pro.jpg" alt="Lenovo">
+                <h3><hr>Samsung Galaxy Book5 Pro</h3>
+                <p>Precio: $2.800.000</p>
+                <button class="buttonx"><a href="./pages/productos.html#galaxy">Ver más</a></button>
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/lenvoyoga.avif" alt="Lenovo">
-                <h3>Lenovo Yoga</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#yoga">Ver más</a></button>
+                <img class="nbproducto" src="img/lenvoyoga.avif" alt="Lenovo">
+                <h3><hr>Lenovo Yoga</h3>
+                <p>Precio: $3.500.000</p>
+                <button class="buttonx"><a href="./pages/productos.html#yoga">Ver más</a></button>
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/asuszenbooks16.webp" alt="Lenovo">
-                <h3>Asus Zenbook S 16</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#zenbook">Ver más</a></button>
+                <img class="nbproducto" src="img/asuszenbooks16.webp" alt="Lenovo">
+                <h3><hr>Asus Zenbook S 16</h3>
+                <p>Precio: $3.800.000 ARS</p>
+                <button class="buttonx"><a href="./pages/productos.html#zenbook">Ver más</a></button>
             </div>
             <div class="card">
-                <img class="nbproducto" src="IMG/asusrogzephyrusg16.jpg" alt="Lenovo">
-                <h3>Asus ROG Zephyrus G16</h3>
-                <p>Precio: $1500000</p>
-                <button><a href="./pages/productos.html#zephyrus">Ver más</a></button>
+                <img class="nbproducto" src="img/asusrogzephyrusg16.jpg" alt="Lenovo">
+                <h3><hr>Asus ROG Zephyrus G16</h3>
+                <p>Precio: $5.000.000+ ARS</p>
+                <button class="buttonx"><a href="./pages/productos.html#zephyrus">Ver más</a></button>
             </div>
             </div>
 
@@ -199,23 +216,19 @@ del dia 23-12-25 -->
 
     </main>
 <!-- =======FIN MAIN======= -->
-<!-- prueba git comit -->
-<!-- =======INICIO FOOTER======= -->
-
-
-    <footer>
+        <footer>
         <section class="containerx-footer">
             <div>
-            <img class="logo" src="IMG/Logo.png" alt="logo">
+            <img class="logo" src="img/Logo.png" alt="logo">
             <p>copyright </p>
             </div>
             
         <div >
             <h3>Redes Sociales</h3>
             <ul class="redes">
-                <li><a href="https://www.facebook.com/" target="_blank"><img  class="marca-logo1"src="IMG/Facebook_logo_(square).png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><img class="marca-logo1" src="IMG/Instagram_icon.png" alt=""></a></li>
-                <li><a href="http://www.x.com/" target="_blank"><img class="marca-logo1" src="IMG/xicon.avif" alt=""></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img  class="marca-logo1"src="img/Facebook_logo_(square).png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img class="marca-logo1" src="img/Instagram_icon.png" alt=""></a></li>
+                <li><a href="http://www.x.com/" target="_blank"><img class="marca-logo1" src="img/xicon.avif" alt=""></a></li>
             </ul>
         </div>
 

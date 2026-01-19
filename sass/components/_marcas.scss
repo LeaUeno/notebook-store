@@ -1,0 +1,29 @@
+@use '../utilities/variables' as variables;
+@use '../utilities/mixins' as mixins;
+
+.marca{
+    @include mixins.flex2(flex, space-evenly, column);
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        a{transition:transform 1s ease-in-out 1;}
+        a:hover{
+            transform: scale(1.2), rotate(360deg);
+        }
+        
+        .marca-logo{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 100px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 15px black;
+    transition:transform 1s ease-in-out 1;
+    ;
+    }    .marca-logo:hover{
+        transform: rotate(360deg);
+        border:5px solid variables.$secondary-color;
+        }
+
+    }
+    

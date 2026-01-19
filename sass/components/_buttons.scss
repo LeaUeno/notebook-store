@@ -1,0 +1,25 @@
+@use '../utilities/variables' as variables;
+.buttonx{
+    background-color: variables.$ninth-color;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    width: auto;
+    &:hover{background-color: variables.$primary-color;
+    color: black;
+    a{
+        color: variables.$secondary-color;
+    }}
+}
+
+.buttonx:active{
+    background-color: variables.$secondary-color;
+    color: black;
+    a{
+        color: variables.$seventh-color;
+    }
+}

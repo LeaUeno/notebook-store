@@ -1,0 +1,15 @@
+    @use '../utilities/variables';
+    @use '../utilities/mixins';
+    .div-contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        background-color: variables.$tenth-color;
+        form{
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        }
+        }

@@ -23,3 +23,19 @@
         color: variables.$seventh-color;
     }
 }
+
+.buttonx1{
+    @extend .buttonx;
+    background-color: rgba(76, 0, 130, 0.599);
+}
+.buttonx1:hover{
+    background-color: indigo;
+    color: black;
+    a{
+        color: variables.$secondary-color;
+    }
+    
+    
+}.buttonx1:active{
+    background-color: variables.$secondary-color;
+    a{color: gold;}}

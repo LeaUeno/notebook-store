@@ -430,7 +430,7 @@ h1:hover, .logo1:hover, .marca-logo:hover, .buttonx:hover, .card:hover {
   border-radius: 8px;
 }
 
-.destacado-box {
+.destacado-box, .destacado1-box {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -442,6 +442,16 @@ h1:hover, .logo1:hover, .marca-logo:hover, .buttonx:hover, .card:hover {
   padding: 15px;
   margin: 20px;
   border-radius: 10px;
+}
+
+.destacado1-box {
+  background-color: rgba(76, 0, 130, 0.599);
+}
+
+.destacado1-img {
+  width: 80%;
+  height: 150px;
+  border-radius: 8px;
 }
 
 .bg-danger {
@@ -571,7 +581,7 @@ footer div ul li {
   border: 5px solid crimson;
 }
 
-.buttonx {
+.buttonx, .buttonx1 {
   background-color: rgb(45, 81, 118);
   color: white;
   border: none;
@@ -582,19 +592,38 @@ footer div ul li {
   cursor: pointer;
   width: auto;
 }
-.buttonx:hover {
+.buttonx:hover, .buttonx1:hover {
   background-color: lightblue;
   color: black;
 }
-.buttonx:hover a {
+.buttonx:hover a, .buttonx1:hover a {
   color: crimson;
 }
 
-.buttonx:active {
+.buttonx:active, .buttonx1:active {
   background-color: crimson;
   color: black;
 }
-.buttonx:active a {
+.buttonx:active a, .buttonx1:active a {
+  color: gold;
+}
+
+.buttonx1 {
+  background-color: rgba(76, 0, 130, 0.599);
+}
+
+.buttonx1:hover {
+  background-color: indigo;
+  color: black;
+}
+.buttonx1:hover a {
+  color: crimson;
+}
+
+.buttonx1:active {
+  background-color: crimson;
+}
+.buttonx1:active a {
   color: gold;
 }
 

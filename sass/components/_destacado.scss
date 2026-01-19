@@ -16,6 +16,17 @@
     border-radius: 10px;
 }
 
+.destacado1-box{
+    @extend .destacado-box;
+    background-color: rgba(76, 0, 130, 0.599);
+}
+
+.destacado1-img {
+    width: 80%;
+    height: 150px;
+    border-radius: 8px;
+}
+
 .bg-danger{
     background-color: variables.$tenth-color;
     border-radius: 10px;

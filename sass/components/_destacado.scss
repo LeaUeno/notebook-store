@@ -1,0 +1,30 @@
+
+@use '../utilities/mixins';
+@use '../utilities/variables' as variables;
+.destacado-img {
+    width: 80%;
+    height: 150px;
+    border-radius: 8px;
+}
+.destacado-box{
+    @include mixins.flex2(flex, flex-start, column);
+    align-items: center;
+    // background-color: variables.$eleventh-color;
+    background-color: rgba(220, 20, 60, 0.431);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.bg-danger{
+    background-color: variables.$tenth-color;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+.row{
+    background-color: azure;
+}

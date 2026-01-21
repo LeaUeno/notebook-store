@@ -188,7 +188,7 @@ header div .account {
   flex-direction: column;
   align-content: center;
   gap: 40px;
-  background-color: rgba(224, 255, 255, 0.372);
+  background-color: rgba(2, 2, 2, 0.424);
   padding: 8%;
   border-radius: 10px;
 }
@@ -251,12 +251,12 @@ ul li {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(224, 255, 255, 0.372);
+  background-color: rgba(2, 2, 2, 0.424);
 }
 
 .container {
   width: auto;
-  background-color: rgba(224, 255, 255, 0.372);
+  background-color: rgba(2, 2, 2, 0.424);
   border-radius: 10px;
 }
 .container section div {
@@ -443,9 +443,17 @@ h1:hover, .logo1:hover, .marca-logo:hover, .buttonx:hover, .card:hover {
   margin: 20px;
   border-radius: 10px;
 }
+.destacado-box:hover, .destacado1-box:hover {
+  background-color: crimson;
+  box-shadow: 2px 1px 20px rgb(225, 56, 90);
+}
 
 .destacado1-box {
   background-color: rgba(76, 0, 130, 0.599);
+}
+.destacado1-box:hover {
+  background-color: indigo;
+  box-shadow: 3px 1px 20px rgb(100, 0, 130);
 }
 
 .destacado1-img {

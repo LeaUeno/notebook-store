@@ -1,5 +1,5 @@
 @use '../utilities/variables';
-.card-cont{
+.card-cont {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -9,32 +9,39 @@
     background-color: variables.$tertiary-color;
     padding: 8%;
     border-radius: 10px;
-    .card{
-    border: 2px solid variables.$octonary-color ;
-    border-radius: 10px;
-    padding: 5px 10px;
-    background-color:variables.$cuaternary-color ;
-    width: 230px;
-    border: 5px solid white;
-    box-shadow: 5px 5px 15px black;
-    text-align: center;
-    align-items: center;
-        .nbproducto{
-    width: 200px;
-    height: 200px;
-    padding: 30px;
-    background-color:variables.$quinary-color ;
-    border-radius: 10px;
-    &:hover{background-color: rgb(218, 249, 249);}
-    }
-    h3{
-    font-size:large;
-}
-&:hover{
-    background-color: variables.$secondary-color;
-    color: white;
-    border: 5px solid rgb(218, 249, 249);
-}
-}
 
+    .card {
+        border: 2px solid variables.$octonary-color ;
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: variables.$cuaternary-color ;
+        width: 230px;
+        border: 5px solid white;
+        box-shadow: 5px 5px 15px black;
+        text-align: center;
+        align-items: center;
+
+        .nbproducto {
+            width: 200px;
+            height: 200px;
+            padding: 30px;
+            background-color: variables.$quinary-color ;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: rgb(218, 249, 249);
+            }
+        }
+
+        h3 {
+            font-size: large;
+        }
+
+        &:hover {
+            background-color: variables.$secondary-color;
+            color: white;
+            border: 5px solid rgb(218, 249, 249);
+        }
     }
+
+}

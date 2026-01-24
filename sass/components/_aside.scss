@@ -1,38 +1,43 @@
 @use '../utilities/variables';
-aside{
+aside {
     display: none;
-    .sidebar{ 
+
+    .sidebar {
 
         text-align: center;
-        .divx{
-        
-            form{
+
+        .divx {
+
+            form {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                align-content: center;        
-            } 
-            input{
-                
-                    width: 130px;
-                }
+                align-content: center;
             }
-            .divb{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                align-content: center;  
+
+            input {
+
+                width: 130px;
             }
         }
+
+        .divb {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+        }
     }
-ul{
-    li{
+}
+
+ul {
+    li {
         list-style: none;
         margin: 10px;
         padding: 10px;
         border-radius: 10px;
         background-color: variables.$tertiary-color;
-        }
     }
+}

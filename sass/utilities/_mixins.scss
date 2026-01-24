@@ -1,40 +1,46 @@
 @use 'variables';
-@mixin general($general){
+
+@mixin general($general) {
     background-color: lightsteelblue;
     text-align: center;
-    h2{
+
+    h2 {
         color: white;
         margin: 10px;
     }
-    h3{
+
+    h3 {
         font-size: medium;
     }
-    h1{
-    color: white;
-    text-shadow: 5px 5px 15px black;
-    cursor: pointer;
-    }
-    h1:hover{
-    color: greenyellow;
-    }
-    h1:active{
-    color: crimson;
-    }
+
+    h1 {
+        color: white;
+        text-shadow: 5px 5px 15px black;
+        cursor: pointer;
     }
 
-    @mixin layout-base {
+    h1:hover {
+        color: greenyellow;
+    }
+
+    h1:active {
+        color: crimson;
+    }
+}
+
+@mixin layout-base {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+        "header"
+        "main"
+        "footer";
     text-align: center;
     align-items: center;
 }
 
-@mixin flex1($display, $justify, $direction){
+@mixin flex1($display, $justify, $direction) {
     display: $display;
     justify-content: $justify;
     flex-direction: $direction;
@@ -46,7 +52,7 @@
 }
 
 
-@mixin flex2($display, $justify, $direction){
+@mixin flex2($display, $justify, $direction) {
     display: $display;
     justify-content: $justify;
     flex-direction: $direction;
@@ -56,7 +62,7 @@
     // background-color: red;
 }
 
-@mixin grid1($display, $justify, $items, $columns,$rows , $area){
+@mixin grid1($display, $justify, $items, $columns, $rows , $area) {
     display: $display;
     justify-content: $justify;
     justify-items: $items;

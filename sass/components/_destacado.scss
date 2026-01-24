@@ -1,12 +1,14 @@
 
 @use '../utilities/mixins';
 @use '../utilities/variables' as variables;
+
 .destacado-img {
     width: 80%;
     height: 150px;
     border-radius: 8px;
 }
-.destacado-box{
+
+.destacado-box {
     @include mixins.flex2(flex, flex-start, column);
     align-items: center;
     // background-color: variables.$eleventh-color;
@@ -14,16 +16,18 @@
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
-    &:hover{
+
+    &:hover {
         background-color: variables.$secondary-color;
-        box-shadow: 2px 1px 20px  rgb(225, 56, 90);
+        box-shadow: 2px 1px 20px rgb(225, 56, 90);
     }
 }
 
-.destacado1-box{
+.destacado1-box {
     @extend .destacado-box;
     background-color: rgba(76, 0, 130, 0.599);
-    &:hover{
+
+    &:hover {
         background-color: indigo;
         box-shadow: 3px 1px 20px rgb(100, 0, 130);
     }
@@ -35,7 +39,7 @@
     border-radius: 8px;
 }
 
-.bg-danger{
+.bg-danger {
     background-color: variables.$tenth-color;
     border-radius: 10px;
     padding: 10px;
@@ -44,6 +48,6 @@
     text-align: center;
 }
 
-.row{
+.row {
     background-color: azure;
 }

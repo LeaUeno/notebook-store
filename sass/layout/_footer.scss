@@ -1,21 +1,23 @@
 @use '../utilities/variables' as variables;
-footer{
+
+footer {
     grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: variables.$cuaternary-color;
-    
-    div{
-        ul{
-            li{
+
+    div {
+        ul {
+            li {
                 list-style: none;
             }
         }
     }
 }
-.containerx-footer{
+
+.containerx-footer {
     background-color: variables.$cuaternary-color;
     display: flex;
     flex-direction: column;
@@ -23,30 +25,38 @@ footer{
     align-content: center;
     justify-content: space-evenly;
     text-align: center;
-    div{
+
+    div {
         align-items: center;
         align-content: center;
     }
-    .logo{
+
+    .logo {
         width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 100px;
-    border: 5px solid white;
-    box-shadow: 5px 5px 15px black;
-    &:hover{
-        border: 5px solid variables.$secondary-color;
-    cursor: pointer;}
+        height: 100px;
+        margin: 10px;
+        border-radius: 100px;
+        border: 5px solid white;
+        box-shadow: 5px 5px 15px black;
+
+        &:hover {
+            border: 5px solid variables.$secondary-color;
+            cursor: pointer;
+        }
     }
 
-    
+
 }
-.marca-logo1{
+
+.marca-logo1 {
     width: 100px;
     height: 100px;
     margin: 10px;
     border-radius: 100px;
     border: 5px solid white;
     box-shadow: 5px 5px 15px black;
-    &:hover{border: 5px solid variables.$secondary-color;}
+
+    &:hover {
+        border: 5px solid variables.$secondary-color;
+    }
 }

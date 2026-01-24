@@ -1,35 +1,48 @@
     @use '../utilities/variables';
-    
-body{
-    img{width: 300px;
-    height: 300px;
-    border-radius: 10px;}
-        h2{
+
+    body {
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        h2 {
             color: white;
         }
+
         color: white;
         background-color: variables.$primary-color;
-        main{
+
+        main {
             background-color: variables.$secondary-color;
+        }
+
+        footer {
+            background-color: darken(variables.$secondary-color, 10%);
+        }
+
+        ::selection {
+            background-color: variables.$secondary-color;
+            color: white;
+        }
+
+        color: rgb(255, 255, 255);
+
+        a {
+            text-decoration: none;
+            color: variables.$text-color;
+
+            &:hover {
+                color: variables.$seventh-color;
             }
-            footer{
-                background-color: darken(variables.$secondary-color, 10%);
-                }
-                ::selection{
-                    background-color:variables.$secondary-color;
-                    color: white;
-                    }
-                    color: rgb(255, 255, 255);
-                    a{
-                        text-decoration: none;
-                        color: variables.$text-color;
-                        &:hover{color: variables.$seventh-color;}
-                        }
-                        display: grid;
-                        grid-template-rows: auto 1fr auto;
-                        height: 100vh;
-                        grid-template-areas: "header"
-                        "main"
-                        "footer";
-                        
-}
+        }
+
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        grid-template-areas: "header"
+        "main"
+        "footer";
+
+    }

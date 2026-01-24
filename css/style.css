@@ -294,7 +294,8 @@ ul li {
   border: 5px solid cornflowerblue;
 }
 
-.cardz-front, .cardz-back {
+.cardz-front,
+.cardz-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -310,7 +311,11 @@ ul li {
   background-color: cornflowerblue;
 }
 
-h1:hover, .logo1:hover, .marca-logo:hover, .buttonx:hover, .card:hover {
+h1:hover,
+.logo1:hover,
+.marca-logo:hover,
+.buttonx:hover,
+.card:hover {
   animation: 1.5s infinite anim-buttonx;
 }
 

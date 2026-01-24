@@ -1,32 +1,41 @@
 @use '../utilities/variables';
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: variables.$senary-color;
-    li{
-        &:hover{
+
+    li {
+        &:hover {
             background-color: variables.$secondary-color;
-            color: black;};
+            color: black;
+        }
+
+        ;
     }
-    .dropdown-item{
+
+    .dropdown-item {
         font-family: "Tomorrow", sans-serif;
         font-weight: 450;
         font-style: normal;
         color: white;
         background-color: variables.$senary-color;
-        &:hover{
+
+        &:hover {
             background-color: variables.$secondary-color;
             color: variables.$seventh-color;
         }
+    }
 }
-}
-.dropdown{
-    .btn{
+
+.dropdown {
+    .btn {
         font-family: "Tomorrow", sans-serif;
-    font-weight: 450;
-    font-style: normal;
-    color: white;
-    &:hover{
-        background-color: variables.$secondary-color;
-        color: variables.$seventh-color;}
+        font-weight: 450;
+        font-style: normal;
+        color: white;
+
+        &:hover {
+            background-color: variables.$secondary-color;
+            color: variables.$seventh-color;
+        }
     }
 }

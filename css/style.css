@@ -47,7 +47,7 @@ body {
 }
 
 .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: rgba(95, 116, 142, 0.895);
 }
 .dropdown-menu li:hover {
   background-color: crimson;
@@ -58,7 +58,7 @@ body {
   font-weight: 450;
   font-style: normal;
   color: white;
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: rgba(95, 116, 142, 0.895);
 }
 .dropdown-menu .dropdown-item:hover {
   background-color: crimson;
@@ -87,7 +87,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-image: url(../img/tecnologia.jpg);
+  background-image: url(../img/tecnologia.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,7 +123,7 @@ header div {
   text-align: center;
 }
 header div div {
-  background-color: rgba(255, 255, 255, 0.242);
+  background-color: rgba(95, 116, 142, 0.895);
   border-radius: 10px;
 }
 header div div nav ul li {
@@ -371,7 +371,7 @@ h1:hover,
   align-items: center;
 }
 .div-producto p {
-  background-color: rgba(220, 220, 220, 0.254);
+  background-color: rgba(95, 116, 142, 0.636);
   border-radius: auto;
   width: auto;
 }
@@ -389,7 +389,7 @@ h1:hover,
   border-radius: 10px;
   width: auto;
   text-align: center;
-  background-color: rgba(220, 220, 220, 0.254);
+  background-color: rgba(95, 116, 142, 0.636);
   align-content: center;
   align-items: center;
 }
@@ -410,7 +410,7 @@ h1:hover,
 }
 .div-producto .modelos p {
   color: white;
-  background-color: rgba(220, 220, 220, 0.254);
+  background-color: rgba(95, 116, 142, 0.636);
   width: auto;
   text-align: center;
 }
@@ -420,7 +420,7 @@ h1:hover,
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-color: rgba(220, 220, 220, 0.254);
+  background-color: rgba(95, 116, 142, 0.636);
 }
 .div-contacto form {
   display: flex;
@@ -468,7 +468,7 @@ h1:hover,
 }
 
 .bg-danger {
-  background-color: rgba(220, 220, 220, 0.254);
+  background-color: rgba(95, 116, 142, 0.636);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -477,12 +477,12 @@ h1:hover,
 }
 
 .row {
-  background-color: azure;
+  background-color: rgba(2, 2, 2, 0.424);
 }
 
 main {
   grid-area: main;
-  background-image: url(../img/background.avif);
+  background-image: url(../img/background.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -514,7 +514,7 @@ main section {
 .mainx .divx {
   display: flex;
   flex-direction: column;
-  background-color: rgba(220, 220, 220, 0.254);
+  background-color: rgba(95, 116, 142, 0.636);
 }
 .mainx .divx form {
   display: flex;
@@ -734,7 +734,7 @@ footer div ul li {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(220, 220, 220, 0.254);
+    background-color: rgba(95, 116, 142, 0.636);
   }
   body main section {
     margin: 20px;
@@ -747,7 +747,7 @@ footer div ul li {
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(220, 220, 220, 0.254);
+    background-color: rgba(95, 116, 142, 0.636);
   }
   body footer .containerx-footer {
     flex-direction: row;

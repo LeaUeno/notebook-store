@@ -188,7 +188,7 @@ header div .account {
   flex-direction: column;
   align-content: center;
   gap: 40px;
-  background-color: rgba(2, 2, 2, 0.424);
+  background-color: rgba(74, 95, 107, 0.656);
   padding: 8%;
   border-radius: 10px;
 }
@@ -251,12 +251,12 @@ ul li {
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(2, 2, 2, 0.424);
+  background-color: rgba(74, 95, 107, 0.656);
 }
 
 .container {
   width: auto;
-  background-color: rgba(2, 2, 2, 0.424);
+  background-color: rgba(74, 95, 107, 0.656);
   border-radius: 10px;
 }
 .container section div {
@@ -340,13 +340,13 @@ h1:hover,
 
 .div-producto p {
   animation-name: aparecer;
-  animation-duration: 5s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
 .div-producto .modelos {
   animation-name: aparecer;
-  animation-duration: 9s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
@@ -371,7 +371,7 @@ h1:hover,
   align-items: center;
 }
 .div-producto p {
-  background-color: rgba(95, 116, 142, 0.636);
+  background-color: rgba(95, 116, 142, 0.898);
   border-radius: auto;
   width: auto;
 }
@@ -389,7 +389,7 @@ h1:hover,
   border-radius: 10px;
   width: auto;
   text-align: center;
-  background-color: rgba(95, 116, 142, 0.636);
+  background-color: rgba(95, 116, 142, 0.898);
   align-content: center;
   align-items: center;
 }
@@ -410,7 +410,7 @@ h1:hover,
 }
 .div-producto .modelos p {
   color: white;
-  background-color: rgba(95, 116, 142, 0.636);
+  background-color: rgba(95, 116, 142, 0.898);
   width: auto;
   text-align: center;
 }
@@ -420,7 +420,7 @@ h1:hover,
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-color: rgba(95, 116, 142, 0.636);
+  background-color: rgba(95, 116, 142, 0.898);
 }
 .div-contacto form {
   display: flex;
@@ -443,7 +443,7 @@ h1:hover,
   width: auto;
   text-align: center;
   align-items: center;
-  background-color: rgba(220, 20, 60, 0.431);
+  background-color: rgba(220, 20, 60, 0.709);
   padding: 15px;
   margin: 20px;
   border-radius: 10px;
@@ -454,7 +454,7 @@ h1:hover,
 }
 
 .destacado1-box {
-  background-color: rgba(76, 0, 130, 0.599);
+  background-color: rgba(76, 0, 130, 0.698);
 }
 .destacado1-box:hover {
   background-color: indigo;
@@ -468,7 +468,7 @@ h1:hover,
 }
 
 .bg-danger {
-  background-color: rgba(95, 116, 142, 0.636);
+  background-color: rgba(95, 116, 142, 0.898);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -495,11 +495,12 @@ main section {
   align-items: center;
   align-content: center;
   text-align: center;
-  background-image: url(../img/background.avif);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: rgba(74, 95, 107, 0.656);
+}
+main section .divx {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(95, 116, 142, 0.898);
 }
 
 .mainx {
@@ -514,7 +515,7 @@ main section {
 .mainx .divx {
   display: flex;
   flex-direction: column;
-  background-color: rgba(95, 116, 142, 0.636);
+  background-color: rgba(95, 116, 142, 0.898);
 }
 .mainx .divx form {
   display: flex;
@@ -734,7 +735,7 @@ footer div ul li {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(95, 116, 142, 0.636);
+    background-color: rgba(95, 116, 142, 0.898);
   }
   body main section {
     margin: 20px;
@@ -747,7 +748,7 @@ footer div ul li {
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(95, 116, 142, 0.636);
+    background-color: rgba(95, 116, 142, 0.898);
   }
   body footer .containerx-footer {
     flex-direction: row;

@@ -26,14 +26,17 @@ main {
         align-items: center;
         align-content: center;
         text-align: center;
-        background-image: url(../img/background.avif);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-color: variables.$tertiary-color;
+        .divx {
+        display: flex;
+        flex-direction: column;
+        background-color: variables.$tenth-color;
+        }
+        
 
         // -------------------------------
     }
+    
 }
 
 

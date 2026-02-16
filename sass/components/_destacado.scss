@@ -12,7 +12,7 @@
     @include mixins.flex2(flex, flex-start, column);
     align-items: center;
     // background-color: variables.$eleventh-color;
-    background-color: rgba(220, 20, 60, 0.431);
+    background-color: rgba(220, 20, 60, 0.709);
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
@@ -25,7 +25,7 @@
 
 .destacado1-box {
     @extend .destacado-box;
-    background-color: rgba(76, 0, 130, 0.599);
+    background-color: rgba(76, 0, 130, 0.698);
 
     &:hover {
         background-color: indigo;

@@ -47,7 +47,7 @@ body {
 }
 
 .dropdown-menu {
-  background-color: rgba(95, 116, 142, 0.895);
+  background-color: rgba(47, 69, 94, 0.895);
 }
 .dropdown-menu li:hover {
   background-color: crimson;
@@ -58,7 +58,7 @@ body {
   font-weight: 450;
   font-style: normal;
   color: white;
-  background-color: rgba(95, 116, 142, 0.895);
+  background-color: rgba(47, 69, 94, 0.895);
 }
 .dropdown-menu .dropdown-item:hover {
   background-color: crimson;
@@ -123,7 +123,7 @@ header div {
   text-align: center;
 }
 header div div {
-  background-color: rgba(95, 116, 142, 0.895);
+  background-color: rgba(47, 69, 94, 0.895);
   border-radius: 10px;
 }
 header div div nav ul li {
@@ -371,7 +371,7 @@ h1:hover,
   align-items: center;
 }
 .div-producto p {
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
   border-radius: auto;
   width: auto;
 }
@@ -389,7 +389,7 @@ h1:hover,
   border-radius: 10px;
   width: auto;
   text-align: center;
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
   align-content: center;
   align-items: center;
 }
@@ -410,7 +410,7 @@ h1:hover,
 }
 .div-producto .modelos p {
   color: white;
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
   width: auto;
   text-align: center;
 }
@@ -420,7 +420,7 @@ h1:hover,
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
 }
 .div-contacto form {
   display: flex;
@@ -468,7 +468,7 @@ h1:hover,
 }
 
 .bg-danger {
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -500,7 +500,7 @@ main section {
 main section .divx {
   display: flex;
   flex-direction: column;
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
 }
 
 .mainx {
@@ -515,7 +515,7 @@ main section .divx {
 .mainx .divx {
   display: flex;
   flex-direction: column;
-  background-color: rgba(95, 116, 142, 0.898);
+  background-color: rgba(50, 68, 91, 0.898);
 }
 .mainx .divx form {
   display: flex;
@@ -735,7 +735,7 @@ footer div ul li {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(95, 116, 142, 0.898);
+    background-color: rgba(50, 68, 91, 0.898);
   }
   body main section {
     margin: 20px;
@@ -748,7 +748,7 @@ footer div ul li {
     margin: 20px;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(95, 116, 142, 0.898);
+    background-color: rgba(50, 68, 91, 0.898);
   }
   body footer .containerx-footer {
     flex-direction: row;
